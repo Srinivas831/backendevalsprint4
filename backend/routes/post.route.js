@@ -12,7 +12,7 @@ postRouter.post("/add",async(req,res)=>{
         res.status(200).send({"msg":"post added"});
     }
     catch(err){
-        res.status(400).send({"msg":"error posting"});
+        res.status(400).send({"msg":"error postingg"});
     }
 })
 
