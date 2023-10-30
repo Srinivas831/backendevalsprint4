@@ -8,7 +8,9 @@ app.use(express.json());
 
 app.use("/users",userRouter);
 app.use("/posts",postRouter);
-
+app.get("/",()=>{
+    console.log("backend belpoyed");
+})
 app.listen(8080,async()=>{
     try{
         await connection;
